@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PTPLWL6Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Felipe Vieira · Gestor de tráfego pago">
+<meta property="og:description" content="Trabalhos, números e contato de Felipe Vieira, gestor de tráfego pago.">
+<meta property="og:image" content="https://soufelipevieira.com/foto-felipe.jpg">
+<meta property="og:url" content="https://soufelipevieira.com/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://soufelipevieira.com/">
+<title>Felipe Vieira · Tráfego</title>
+<meta name="description" content="Felipe Vieira, gestor de tráfego pago. Trabalhos, números e contato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+
+/* Layout: estrutura de landing (topo, números, sobre, trabalhos, contato) com clima de galeria escura —
+   nome gigante em serifa estreita, foto pequena emoldurada, uma faixa clara de "papel" no meio para dar respiro. */
+:root{
+  --ink:#120D0A;        /* fundo: quase preto, amarronzado */
+  --ink-2:#1B140F;      /* superfícies */
+  --line:#3A2B21;       /* linhas e bordas */
+  --paper:#EEE5D6;      /* branco quebrado (texto e faixa clara) */
+  --paper-dim:#ABA092;  /* texto secundário no escuro */
+  --gold:#C9A15B;       /* destaque único */
+  --oxblood:#7A2418;    /* toque de vermelho profundo, só detalhe */
+  --on-paper:#1E1611;   /* texto na faixa clara */
+  --on-paper-dim:#5E5045;
+  --f-display:'Instrument Serif', 'Times New Roman', Georgia, serif;
+  --f-body:'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-data:'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --s-1:8px; --s-2:16px; --s-3:24px; --s-4:40px; --s-5:64px; --s-6:104px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--ink);color:var(--paper);font:17px/1.65 var(--f-body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;margin:0;line-height:.95;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:2px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--gold);color:var(--ink);padding:8px 12px;z-index:100}
+.skip:focus{left:16px}
+.label{font:500 12px/1 var(--f-data);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.label.dim{color:var(--paper-dim)}
+
+/* topo */
+.nav{padding-block:22px;border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.mono{font:400 26px/1 var(--f-display);letter-spacing:.02em;text-decoration:none}
+.mono i{color:var(--gold)}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+.nav a.l{display:inline-block;padding:10px 12px;font:500 12px var(--f-data);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--paper-dim)}
+.nav a.l:hover{color:var(--paper)}
+
+.hero{padding-block:var(--s-5) var(--s-5)}
+.hero .wrap{display:grid;gap:var(--s-4);grid-template-columns:minmax(0,1fr)}
+@media(min-width:860px){.hero-side{display:grid!important;grid-template-columns:auto minmax(0,1fr) minmax(0,1fr);gap:var(--s-4)!important;align-items:end;padding-top:var(--s-3);border-top:1px solid var(--line)}}
+.name{font-size:clamp(84px,21vw,232px);text-transform:uppercase;letter-spacing:-.01em;line-height:.82}
+.name span{display:block}
+.name span:last-child{color:var(--gold)}
+.hero-side{display:flex;flex-direction:column;gap:var(--s-3)}
+.portrait{display:flex;gap:var(--s-2);align-items:flex-end}
+.portrait img{width:168px;height:216px;object-fit:cover;object-position:52% 30%;border-radius:84px 84px 4px 4px;display:block;border:1px solid var(--line)}
+.portrait figcaption{font:400 12px/1.5 var(--f-data);color:var(--paper-dim);max-width:16ch}
+.tagline{font:400 clamp(26px,3.4vw,34px)/1.15 var(--f-display)}
+.tagline em{color:var(--gold)}
+.intro{color:var(--paper-dim);max-width:44ch}
+
+/* números */
+.numbers{border-block:1px solid var(--line)}
+.numbers ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.numbers ul{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.numbers li{padding:var(--s-4) var(--s-2) var(--s-4) 0;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--line)}
+.numbers li:nth-child(odd){padding-right:var(--s-2)}
+.numbers li:nth-child(even){padding-left:var(--s-2);border-left:1px solid var(--line)}
+@media(min-width:860px){
+  .numbers li{border-bottom:none;padding:var(--s-4) var(--s-3)!important;border-left:1px solid var(--line)}
+  .numbers li:first-child{border-left:none;padding-left:0!important}
+}
+.numbers b{font:400 clamp(52px,7vw,76px)/.9 var(--f-display);color:var(--paper);font-variant-numeric:lining-nums}
+.numbers b small{font-size:.45em;color:var(--gold);margin-left:4px}
+.numbers span{font-size:14px;line-height:1.4;color:var(--paper-dim);max-width:22ch}
+
+/* seções */
+.section{padding-block:var(--s-6)}
+.head{display:flex;flex-direction:column;gap:var(--s-2);margin-bottom:var(--s-5)}
+.head h2{font-size:clamp(48px,8vw,92px)}
+.head h2 em{color:var(--gold)}
+.head p{color:var(--paper-dim);max-width:52ch}
+
+/* sobre: faixa clara */
+.about{background:var(--paper);color:var(--on-paper)}
+.about .label{color:var(--oxblood)}
+.about .head h2 em{color:var(--oxblood)}
+.about .head p{color:var(--on-paper-dim)}
+.about-grid{display:grid;gap:var(--s-5);grid-template-columns:minmax(0,1fr)}
+@media(min-width:860px){.about-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}}
+.about-text{display:flex;flex-direction:column;gap:var(--s-2);font-size:18px;max-width:58ch}
+.timeline{list-style:none;margin:0;padding:0;border-top:1px solid #cdbfab}
+.timeline li{display:grid;grid-template-columns:112px minmax(0,1fr);gap:var(--s-2);padding-block:var(--s-3);border-bottom:1px solid #cdbfab}
+.timeline time{font:500 12px/1.6 var(--f-data);letter-spacing:.06em;text-transform:uppercase;color:var(--oxblood)}
+.timeline strong{display:block;font:400 26px/1.1 var(--f-display);margin-bottom:6px}
+.timeline span{color:var(--on-paper-dim);font-size:15.5px}
+
+/* trabalhos: modelos */
+.cases{display:flex;flex-direction:column;gap:var(--s-3)}
+.case{border:1px solid var(--line);background:var(--ink-2);padding:var(--s-4) var(--s-3);display:grid;gap:var(--s-4);grid-template-columns:minmax(0,1fr)}
+@media(min-width:860px){.case{grid-template-columns:minmax(0,.9fr) minmax(0,2fr);padding:var(--s-5) var(--s-4)}}
+.case-id{display:flex;flex-direction:column;gap:var(--s-2)}
+.case-no{font:400 15px var(--f-data);color:var(--gold)}
+.case h3{font-size:clamp(34px,4.4vw,48px)}
+.case-meta{font:500 12px/1.6 var(--f-data);letter-spacing:.1em;text-transform:uppercase;color:var(--paper-dim)}
+.case-body{display:flex;flex-direction:column;gap:var(--s-3)}
+.pair{display:grid;gap:var(--s-2);grid-template-columns:minmax(0,1fr)}
+@media(min-width:640px){.pair{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.block{padding:var(--s-3);border:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.block.done{border-color:var(--gold)}
+.block p{color:var(--paper-dim);font-size:15.5px}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
+.result{padding:var(--s-3) var(--s-2) 0 0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.result + .result{padding-left:var(--s-2);border-left:1px solid var(--line)}
+.result b{font:400 clamp(34px,4.6vw,48px)/1 var(--f-display);color:var(--paper)}
+.result span{font-size:13px;line-height:1.35;color:var(--paper-dim)}
+.period{font:400 12px var(--f-data);color:var(--paper-dim)}
+.tbd{color:var(--paper-dim);opacity:.85}
+.tbd b{color:var(--line);-webkit-text-stroke:0}
+
+/* além dos anúncios */
+.extras{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);grid-template-columns:minmax(0,1fr)}
+@media(min-width:760px){.extras{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.extra{background:var(--ink);padding:var(--s-4) var(--s-3);display:flex;flex-direction:column;gap:12px}
+.extra h3{font-size:32px;line-height:1.05}
+.extra p{color:var(--paper-dim);font-size:16px;max-width:46ch}
+
+/* contato */
+.contact{border-top:1px solid var(--line)}
+.contact h2{font-size:clamp(72px,16vw,180px);text-transform:uppercase;line-height:.85}
+.contact-list{list-style:none;margin:var(--s-5) 0 0;padding:0;border-top:1px solid var(--line)}
+.contact-list li{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;padding-block:var(--s-3);border-bottom:1px solid var(--line)}
+.contact-list .k{font:500 12px var(--f-data);letter-spacing:.14em;text-transform:uppercase;color:var(--paper-dim);min-width:120px}
+.contact-list a{font:400 clamp(26px,4vw,40px)/1.1 var(--f-display);text-decoration:none;overflow-wrap:anywhere;min-width:0}
+.contact-list a:hover{color:var(--gold)}
+.contact-list .v{display:flex;flex-wrap:wrap;align-items:center;gap:12px;flex:1;justify-content:flex-end;min-width:0}
+.copy{font:500 12px var(--f-data);letter-spacing:.08em;text-transform:uppercase;padding:10px 14px;background:transparent;border:1px solid var(--line);color:var(--paper);cursor:pointer;min-height:40px}
+.copy:hover{border-color:var(--gold)}
+.ph{color:var(--gold);border-bottom:1px dashed var(--gold)}
+footer{padding-block:var(--s-4);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font:400 12px var(--f-data);color:var(--paper-dim)}
+
+@media (prefers-reduced-motion:no-preference){
+  .name span{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .name span:last-child{animation-delay:.08s}
+  @keyframes rise{from{transform:translateY(18px);opacity:.25}to{transform:none;opacity:1}}
+  .contact-list a,.nav a.l,.copy{transition:color .2s,border-color .2s}
+}
+</style>
+
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="mono" href="#topo" aria-label="Início">F<i>V</i></a>
+    <ul>
+      <li><a class="l" href="#sobre">Sobre</a></li>
+      <li><a class="l" href="#trabalhos">Trabalhos</a></li>
+      <li><a class="l" href="#contato">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="wrap">
+    <h1 class="name"><span>Felipe</span><span>Vieira</span></h1>
+    <div class="hero-side">
+      <figure class="portrait" style="margin:0">
+        <img src="foto-felipe.jpg" alt="Retrato de Felipe Vieira" width="168" height="216">
+        <figcaption>Gestor de tráfego pago<br>Sorocaba / SP</figcaption>
+      </figure>
+      <p class="tagline">Anúncios pagos com <em>meta clara</em> e resultado acompanhado de perto.</p>
+      <p class="intro">Planejo e acompanho anúncios no Instagram, Facebook e Google para empresas de vários segmentos. Também lidero uma equipe de gestores de tráfego.</p>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="numbers" aria-label="Números">
+  <div class="wrap">
+    <ul>
+      <li><b>50<small>+</small></b><span>empresas atendidas, de vários segmentos</span></li>
+      <li><b>3<small>anos</small></b><span>trabalhando com anúncios pagos</span></li>
+      <li><b>2<small>anos</small></b><span>liderando uma equipe de gestores de tráfego</span></li>
+      <li><b>10–12</b><span>clientes por gestor na equipe que lidero</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section about" id="sobre">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Sobre mim</span>
+      <h2>Do plano ao <em>dia a dia</em> da conta</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Comecei como autônomo, cuidando dos anúncios de pequenas e médias empresas. Hoje sou head de projetos na TJ Digital, uma assessoria de marketing.</p>
+        <p>Meu trabalho começa antes do anúncio: entender o que a empresa vende, para quem, e qual resultado precisa melhorar. Depois vêm metas claras, campanhas organizadas, controle de onde veio cada contato e ajustes toda semana.</p>
+      </div>
+      <ol class="timeline">
+        <li><time>set 2023</time><div><strong>Gestor de tráfego autônomo</strong><span>Anúncios no Instagram, Facebook e Google para empresas de serviços, comércio, eventos e indústria.</span></div></li>
+        <li><time>jun 2024 – hoje</time><div><strong>Head de projetos · TJ Digital</strong><span>Lidero a equipe de gestores de tráfego. Monto os planejamentos, defino as metas e acompanho os ajustes das contas.</span></div></li>
+        <li><time>até 2030</time><div><strong>Bacharelado em Administração</strong><span>Em andamento.</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="trabalhos">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Trabalhos</span>
+      <h2>O que foi feito e <em>o que mudou</em></h2>
+      <p>Alguns projetos que acompanhei. Os nomes das empresas foram omitidos.</p>
+    </div>
+
+    <div class="cases">
+      <article class="case">
+        <div class="case-id">
+          <span class="case-no">01</span>
+          <h3><span class="ph">Segmento do cliente</span></h3>
+          <span class="case-meta"><span class="ph">Cidade / estado</span> · <span class="ph">Plataformas</span></span>
+        </div>
+        <div class="case-body">
+          <div class="pair">
+            <div class="block"><span class="label dim">Desafio</span><p class="ph">Qual era o problema, em uma ou duas frases.</p></div>
+            <div class="block done"><span class="label">O que foi feito</span><p class="ph">O que você mudou, em linguagem simples.</p></div>
+          </div>
+          <div class="results">
+            <div class="result tbd"><b>—</b><span>Resultado 1</span></div>
+            <div class="result tbd"><b>—</b><span>Resultado 2</span></div>
+            <div class="result tbd"><b>—</b><span>Resultado 3</span></div>
+          </div>
+          <p class="period ph">Período dos números</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-id">
+          <span class="case-no">02</span>
+          <h3><span class="ph">Segmento do cliente</span></h3>
+          <span class="case-meta"><span class="ph">Cidade / estado</span> · <span class="ph">Plataformas</span></span>
+        </div>
+        <div class="case-body">
+          <div class="pair">
+            <div class="block"><span class="label dim">Desafio</span><p class="ph">Qual era o problema, em uma ou duas frases.</p></div>
+            <div class="block done"><span class="label">O que foi feito</span><p class="ph">O que você mudou, em linguagem simples.</p></div>
+          </div>
+          <div class="results">
+            <div class="result tbd"><b>—</b><span>Resultado 1</span></div>
+            <div class="result tbd"><b>—</b><span>Resultado 2</span></div>
+            <div class="result tbd"><b>—</b><span>Resultado 3</span></div>
+          </div>
+          <p class="period ph">Período dos números</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-id">
+          <span class="case-no">03</span>
+          <h3><span class="ph">Segmento do cliente</span></h3>
+          <span class="case-meta"><span class="ph">Cidade / estado</span> · <span class="ph">Plataformas</span></span>
+        </div>
+        <div class="case-body">
+          <div class="pair">
+            <div class="block"><span class="label dim">Desafio</span><p class="ph">Qual era o problema, em uma ou duas frases.</p></div>
+            <div class="block done"><span class="label">O que foi feito</span><p class="ph">O que você mudou, em linguagem simples.</p></div>
+          </div>
+          <div class="results">
+            <div class="result tbd"><b>—</b><span>Resultado 1</span></div>
+            <div class="result tbd"><b>—</b><span>Resultado 2</span></div>
+            <div class="result tbd"><b>—</b><span>Resultado 3</span></div>
+          </div>
+          <p class="period ph">Período dos números</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-id">
+          <span class="case-no">04</span>
+          <h3><span class="ph">Segmento do cliente</span></h3>
+          <span class="case-meta"><span class="ph">Cidade / estado</span> · <span class="ph">Plataformas</span></span>
+        </div>
+        <div class="case-body">
+          <div class="pair">
+            <div class="block"><span class="label dim">Desafio</span><p class="ph">Qual era o problema, em uma ou duas frases.</p></div>
+            <div class="block done"><span class="label">O que foi feito</span><p class="ph">O que você mudou, em linguagem simples.</p></div>
+          </div>
+          <div class="results">
+            <div class="result tbd"><b>—</b><span>Resultado 1</span></div>
+            <div class="result tbd"><b>—</b><span>Resultado 2</span></div>
+            <div class="result tbd"><b>—</b><span>Resultado 3</span></div>
+          </div>
+          <p class="period ph">Período dos números</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="alem" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Além dos anúncios</span>
+      <h2>Liderança e <em>ferramentas próprias</em></h2>
+    </div>
+    <div class="extras">
+      <div class="extra"><span class="label dim">Equipe</span><h3>Liderança de gestores</h3><p>Desde junho de 2024 lidero a equipe de gestores de tráfego da TJ Digital, em que cada gestor cuida de 10 a 12 clientes. Faço reuniões diárias, conversas individuais, treinamentos e revisões das contas a cada 15 dias.</p></div>
+      <div class="extra"><span class="label dim">Método</span><h3>Planejamento com metas</h3><p>Todo cliente tem metas mensais por plataforma: quantos contatos queremos, quanto cada um pode custar e quantos precisam ser de pessoas realmente interessadas.</p></div>
+      <div class="extra"><span class="label dim">Em construção</span><h3>Origem de cada contato</h3><p>Ferramenta própria que mostra de qual anúncio veio cada conversa no WhatsApp.</p></div>
+      <div class="extra"><span class="label dim">Em construção</span><h3>Painel das contas</h3><p>Painel próprio para acompanhar todos os dias o saldo, o custo de cada contato e o último ajuste feito em cada cliente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contato">
+  <div class="wrap">
+    <span class="label">Contato</span>
+    <h2>Contato</h2>
+    <ul class="contact-list">
+      <li><span class="k">Instagram</span><span class="v"><a href="https://www.instagram.com/soufelipevieira/" target="_blank" rel="noopener">@soufelipevieira</a></span></li>
+      <li><span class="k">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/soufelipevieira/" target="_blank" rel="noopener">in/soufelipevieira</a></span></li>
+      <li><span class="k">E-mail</span><span class="v"><a id="mail" href="mailto:gestor.felipevs@gmail.com">gestor.felipevs@gmail.com</a><button class="copy" id="copyBtn" type="button">Copiar</button></span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap"><span>Felipe Vieira da Silva</span><span>Sorocaba / SP · 2026</span></div></footer>
+
+<script>
+document.getElementById('copyBtn').addEventListener('click',function(){
+  var el=document.getElementById('mail'),t=el.textContent,b=this;
+  function done(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar'},1600)}
+  function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selecionado'}
+  try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
+});
+</script>
+
+</body>
+</html>
