@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+<script>
+  /* Consentimento padrão: negado até o visitante aceitar (LGPD). Vem antes do Tag Manager. */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    functionality_storage: 'granted', security_storage: 'granted', wait_for_update: 500
+  });
+  try { if (localStorage.getItem('fv_consent_v1') === 'granted') {
+    gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted' });
+  } } catch (e) {}
+</script>
 <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PTPLWL6Q"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -20,6 +32,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="site.css">
 <style>
 html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}
 
@@ -61,7 +74,7 @@ a{color:inherit}
 .mono{font:400 26px/1 var(--f-display);letter-spacing:.02em;text-decoration:none}
 .mono i{color:var(--gold)}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
-.nav a.l{display:inline-block;padding:10px 12px;font:500 12px var(--f-data);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--paper-dim)}
+.nav a.l{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font:500 12px var(--f-data);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--paper-dim)}
 .nav a.l:hover{color:var(--paper)}
 
 .hero{padding-block:var(--s-5) var(--s-5)}
@@ -153,7 +166,7 @@ a{color:inherit}
 .contact-list a{font:400 clamp(26px,4vw,40px)/1.1 var(--f-display);text-decoration:none;overflow-wrap:anywhere;min-width:0}
 .contact-list a:hover{color:var(--gold)}
 .contact-list .v{display:flex;flex-wrap:wrap;align-items:center;gap:12px;flex:1;justify-content:flex-end;min-width:0}
-.copy{font:500 12px var(--f-data);letter-spacing:.08em;text-transform:uppercase;padding:10px 14px;background:transparent;border:1px solid var(--line);color:var(--paper);cursor:pointer;min-height:40px}
+.copy{font:500 12px var(--f-data);letter-spacing:.08em;text-transform:uppercase;padding:10px 14px;background:transparent;border:1px solid var(--line);color:var(--paper);cursor:pointer;min-height:44px}
 .copy:hover{border-color:var(--gold)}
 .ph{color:var(--gold);border-bottom:1px dashed var(--gold)}
 footer{padding-block:var(--s-4);border-top:1px solid var(--line)}
@@ -185,10 +198,20 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="cookie" id="cookie-banner" role="region" aria-label="Aviso de cookies" hidden>
+  <div class="cookie-box">
+    <h2>Cookies</h2>
+    <p>Uso cookies de medição para entender como o site é visitado. Eles só são ativados se você aceitar. Você pode mudar sua escolha a qualquer momento no rodapé. Saiba mais na <a href="privacidade.html#cookies">Política de Privacidade</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" data-reject>Recusar</button>
+      <button type="button" data-accept>Aceitar</button>
+    </div>
+  </div>
+</div>
 
 <nav class="nav" aria-label="Principal">
   <div class="wrap">
-    <a class="mono" href="#topo" aria-label="Início">F<i>V</i></a>
+    <a class="mono" href="#topo" aria-label="Felipe Vieira, voltar ao início">F<i>V</i></a>
     <ul>
       <li><a class="l" href="#sobre">Sobre</a></li>
       <li><a class="l" href="#trabalhos">Trabalhos</a></li>
@@ -216,7 +239,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 <section class="numbers" aria-label="Números">
   <div class="wrap">
     <ul>
-      <li class="reveal"><b>50<small>+</small></b><span>empresas atendidas, de vários segmentos</span></li>
+      <li class="reveal"><b>50<small>+</small></b><span>projetos atendidos, de vários segmentos</span></li>
       <li class="reveal"><b>3<small>anos</small></b><span>trabalhando com anúncios pagos</span></li>
       <li class="reveal"><b>2<small>anos</small></b><span>liderando uma equipe de gestores de tráfego</span></li>
       <li class="reveal"><b>10–12</b><span>clientes por gestor na equipe que lidero</span></li>
@@ -249,13 +272,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     <div class="reveal head">
       <span class="label">Trabalhos</span>
       <h2>O que foi feito e <em>o que mudou</em></h2>
-      <p>Alguns projetos que acompanhei. Os nomes das empresas foram omitidos.</p>
+      <p>Alguns projetos que acompanhei. Os nomes das empresas foram omitidos. Os números são de períodos específicos e não garantem o mesmo resultado em outros projetos.</p>
     </div>
 
     <div class="cases">
       <article class="reveal case">
         <div class="case-id">
-          <span class="case-no">01</span>
+          <span class="case-no" aria-hidden="true">01</span>
           <h3><span class="ph">Segmento do cliente</span></h3>
           <span class="case-meta"><span class="ph">Cidade / estado</span> · <span class="ph">Plataformas</span></span>
         </div>
@@ -275,7 +298,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 
       <article class="reveal case">
         <div class="case-id">
-          <span class="case-no">02</span>
+          <span class="case-no" aria-hidden="true">02</span>
           <h3><span class="ph">Segmento do cliente</span></h3>
           <span class="case-meta"><span class="ph">Cidade / estado</span> · <span class="ph">Plataformas</span></span>
         </div>
@@ -295,7 +318,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 
       <article class="reveal case">
         <div class="case-id">
-          <span class="case-no">03</span>
+          <span class="case-no" aria-hidden="true">03</span>
           <h3><span class="ph">Segmento do cliente</span></h3>
           <span class="case-meta"><span class="ph">Cidade / estado</span> · <span class="ph">Plataformas</span></span>
         </div>
@@ -315,7 +338,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 
       <article class="reveal case">
         <div class="case-id">
-          <span class="case-no">04</span>
+          <span class="case-no" aria-hidden="true">04</span>
           <h3><span class="ph">Segmento do cliente</span></h3>
           <span class="case-meta"><span class="ph">Cidade / estado</span> · <span class="ph">Plataformas</span></span>
         </div>
@@ -345,8 +368,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     <div class="extras">
       <div class="reveal extra"><span class="label dim">Equipe</span><h3>Liderança de gestores</h3><p>Desde junho de 2024 lidero a equipe de gestores de tráfego da TJ Digital, em que cada gestor cuida de 10 a 12 clientes. Faço reuniões diárias, conversas individuais, treinamentos e revisões das contas a cada 15 dias.</p></div>
       <div class="reveal extra"><span class="label dim">Método</span><h3>Planejamento com metas</h3><p>Todo cliente tem metas mensais por plataforma: quantos contatos queremos, quanto cada um pode custar e quantos precisam ser de pessoas realmente interessadas.</p></div>
-      <div class="reveal extra"><span class="label dim">Em construção</span><h3>Origem de cada contato</h3><p>Ferramenta própria que mostra de qual anúncio veio cada conversa no WhatsApp.</p></div>
-      <div class="reveal extra"><span class="label dim">Em construção</span><h3>Painel das contas</h3><p>Painel próprio para acompanhar todos os dias o saldo, o custo de cada contato e o último ajuste feito em cada cliente.</p></div>
+      <div class="reveal extra"><span class="label dim">Em construção</span><h3>Origem de cada contato</h3><p>Ferramenta própria, em desenvolvimento, para mostrar de qual anúncio veio cada conversa no WhatsApp.</p></div>
+      <div class="reveal extra"><span class="label dim">Em construção</span><h3>Painel das contas</h3><p>Painel próprio, em desenvolvimento, para acompanhar todos os dias o saldo, o custo de cada contato e o último ajuste feito em cada cliente.</p></div>
     </div>
   </div>
 </section>
@@ -365,7 +388,20 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 
 </main>
 
-<footer><div class="wrap"><span>Felipe Vieira da Silva</span><span>Sorocaba / SP · 2026</span></div></footer>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Informações legais">
+      <ul>
+        <li><a href="privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos.html">Termos de Uso</a></li>
+        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+        <li><button type="button" data-cookie-prefs>Preferências de cookies</button></li>
+      </ul>
+    </nav>
+    <div class="row"><span>Felipe Vieira da Silva · Sorocaba / SP</span><span>© 2026</span></div>
+  </div>
+</footer>
+<script src="cookies.js" defer></script>
 
 <script>
 document.getElementById('copyBtn').addEventListener('click',function(){

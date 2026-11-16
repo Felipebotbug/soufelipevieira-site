@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<script>
+  /* Consentimento padrão: negado até o visitante aceitar (LGPD). Vem antes do Tag Manager. */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    functionality_storage: 'granted', security_storage: 'granted', wait_for_update: 500
+  });
+  try { if (localStorage.getItem('fv_consent_v1') === 'granted') {
+    gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted' });
+  } } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PTPLWL6Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Acessibilidade · Felipe Vieira</title>
+<meta name="description" content="Recursos de acessibilidade do site soufelipevieira.com e como relatar problemas.">
+<link rel="canonical" href="https://soufelipevieira.com/acessibilidade.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="site.css">
+<style>
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--ink);color:var(--paper);font:17px/1.65 var(--f-body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:2px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--gold);color:var(--ink);padding:8px 12px;z-index:100}.skip:focus{left:16px}
+.nav{padding-block:14px;border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.mono{font:400 26px/1 var(--f-display);text-decoration:none;color:var(--paper);display:inline-flex;align-items:center;min-height:44px}.mono i{color:var(--gold)}
+.back{display:inline-flex;align-items:center;min-height:44px;font:500 12px var(--f-data);letter-spacing:.12em;text-transform:uppercase;color:var(--paper-dim);text-decoration:none}
+.back:hover{color:var(--paper)}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="cookie" id="cookie-banner" role="region" aria-label="Aviso de cookies" hidden>
+  <div class="cookie-box">
+    <h2>Cookies</h2>
+    <p>Uso cookies de medição para entender como o site é visitado. Eles só são ativados se você aceitar. Você pode mudar sua escolha a qualquer momento no rodapé. Saiba mais na <a href="privacidade.html#cookies">Política de Privacidade</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" data-reject>Recusar</button>
+      <button type="button" data-accept>Aceitar</button>
+    </div>
+  </div>
+</div>
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="mono" href="./" aria-label="Felipe Vieira, página inicial">F<i>V</i></a>
+    <a class="back" href="./">← Voltar ao site</a>
+  </div>
+</nav>
+<main id="conteudo" class="legal">
+  <div class="wrap">
+
+    <span class="eyebrow">Acessibilidade</span>
+    <h1>Acessibilidade</h1>
+    <p class="updated">Vigente desde 16 de novembro de 2026</p>
+
+    <p>Este site foi feito para ser usado pelo maior número possível de pessoas. A referência usada é o nível AA das Diretrizes de Acessibilidade para Conteúdo Web (WCAG 2.2) e o Modelo de Acessibilidade em Governo Eletrônico (eMAG).</p>
+
+    <h2>Navegação por teclado</h2>
+    <ul>
+      <li><strong>Tab</strong> avança para o próximo link ou botão, e <strong>Shift + Tab</strong> volta para o anterior.</li>
+      <li><strong>Enter</strong> abre links. <strong>Enter</strong> ou <strong>Espaço</strong> acionam botões.</li>
+      <li>O primeiro item da página é o atalho <strong>"Pular para o conteúdo"</strong>, que leva direto ao conteúdo principal.</li>
+      <li>O item em foco recebe um contorno dourado bem visível.</li>
+      <li>No aviso de cookies, depois de feita uma escolha, a tecla <strong>Esc</strong> fecha o aviso quando ele é reaberto pelo rodapé.</li>
+    </ul>
+
+    <h2>O que mais foi feito</h2>
+    <ul>
+      <li>Contraste entre texto e fundo pensado para leitura confortável.</li>
+      <li>Títulos organizados em ordem, para facilitar a navegação com leitores de tela.</li>
+      <li>Texto alternativo na foto e rótulos nos menus.</li>
+      <li>Áreas de toque com pelo menos 44 pixels nos links e botões principais.</li>
+      <li>O site se adapta a celulares e pode ser ampliado pelo navegador sem perder conteúdo.</li>
+      <li>Para quem ativou a opção de reduzir movimento no aparelho, as animações são desligadas e todo o conteúdo aparece parado.</li>
+      <li>O idioma da página é declarado como português do Brasil, para os leitores de tela usarem a pronúncia correta.</li>
+    </ul>
+
+    <h2>Limitações conhecidas</h2>
+    <p>O site ainda não passou por uma auditoria completa feita por especialista nem por testes com usuários de tecnologias assistivas. Pode haver pontos a melhorar.</p>
+
+    <h2>Encontrou alguma barreira?</h2>
+    <p>Se algo no site atrapalhou o seu acesso, escreva para <a href="mailto:gestor.felipevs@gmail.com">gestor.felipevs@gmail.com</a> dizendo a página, o problema e, se possível, o aparelho e o navegador que você usa. Os relatos são analisados e corrigidos o quanto antes.</p>
+
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Informações legais">
+      <ul>
+        <li><a href="privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos.html">Termos de Uso</a></li>
+        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+        <li><button type="button" data-cookie-prefs>Preferências de cookies</button></li>
+      </ul>
+    </nav>
+    <div class="row"><span>Felipe Vieira da Silva · Sorocaba / SP</span><span>© 2026</span></div>
+  </div>
+</footer>
+<script src="cookies.js" defer></script>
+</body>
+</html>
