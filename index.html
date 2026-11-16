@@ -165,6 +165,21 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   @keyframes rise{from{transform:translateY(18px);opacity:.25}to{transform:none;opacity:1}}
   .contact-list a,.nav a.l,.copy{transition:color .2s,border-color .2s}
 }
+
+/* movimento */
+.portrait img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.portrait:hover img{transform:scale(1.03)}
+.case{transition:border-color .3s}
+.case:hover{border-color:#5a4330}
+.block.done{position:relative;overflow:hidden}
+.contact-list a{background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 1px no-repeat;transition:background-size .35s,color .2s}
+.contact-list a:hover{background-size:100% 1px}
+@media (prefers-reduced-motion:no-preference){
+  .js .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+  .js .reveal.in{opacity:1;transform:none}
+  .portrait img{animation:fadein 1.1s .25s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes fadein{from{opacity:.3;transform:scale(.96)}to{opacity:1;transform:none}}
+}
 </style>
 
 </head>
@@ -186,12 +201,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   <div class="wrap">
     <h1 class="name"><span>Felipe</span><span>Vieira</span></h1>
     <div class="hero-side">
-      <figure class="portrait" style="margin:0">
+      <figure class="reveal portrait" style="margin:0">
         <img src="foto-felipe.jpg" alt="Retrato de Felipe Vieira" width="168" height="216">
         <figcaption>Gestor de tráfego pago<br>Sorocaba / SP</figcaption>
       </figure>
-      <p class="tagline">Anúncios pagos com <em>meta clara</em> e resultado acompanhado de perto.</p>
-      <p class="intro">Planejo e acompanho anúncios no Instagram, Facebook e Google para empresas de vários segmentos. Também lidero uma equipe de gestores de tráfego.</p>
+      <p class="reveal tagline">Anúncios pagos com <em>meta clara</em> e resultado acompanhado de perto.</p>
+      <p class="reveal intro">Planejo e acompanho anúncios no Instagram, Facebook e Google para empresas de vários segmentos. Também lidero uma equipe de gestores de tráfego.</p>
     </div>
   </div>
 </header>
@@ -201,29 +216,29 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 <section class="numbers" aria-label="Números">
   <div class="wrap">
     <ul>
-      <li><b>50<small>+</small></b><span>empresas atendidas, de vários segmentos</span></li>
-      <li><b>3<small>anos</small></b><span>trabalhando com anúncios pagos</span></li>
-      <li><b>2<small>anos</small></b><span>liderando uma equipe de gestores de tráfego</span></li>
-      <li><b>10–12</b><span>clientes por gestor na equipe que lidero</span></li>
+      <li class="reveal"><b>50<small>+</small></b><span>empresas atendidas, de vários segmentos</span></li>
+      <li class="reveal"><b>3<small>anos</small></b><span>trabalhando com anúncios pagos</span></li>
+      <li class="reveal"><b>2<small>anos</small></b><span>liderando uma equipe de gestores de tráfego</span></li>
+      <li class="reveal"><b>10–12</b><span>clientes por gestor na equipe que lidero</span></li>
     </ul>
   </div>
 </section>
 
 <section class="section about" id="sobre">
   <div class="wrap">
-    <div class="head">
+    <div class="reveal head">
       <span class="label">Sobre mim</span>
       <h2>Do plano ao <em>dia a dia</em> da conta</h2>
     </div>
     <div class="about-grid">
-      <div class="about-text">
+      <div class="reveal about-text">
         <p>Comecei como autônomo, cuidando dos anúncios de pequenas e médias empresas. Hoje sou head de projetos na TJ Digital, uma assessoria de marketing.</p>
         <p>Meu trabalho começa antes do anúncio: entender o que a empresa vende, para quem, e qual resultado precisa melhorar. Depois vêm metas claras, campanhas organizadas, controle de onde veio cada contato e ajustes toda semana.</p>
       </div>
       <ol class="timeline">
-        <li><time>set 2023</time><div><strong>Gestor de tráfego autônomo</strong><span>Anúncios no Instagram, Facebook e Google para empresas de serviços, comércio, eventos e indústria.</span></div></li>
-        <li><time>jun 2024 – hoje</time><div><strong>Head de projetos · TJ Digital</strong><span>Lidero a equipe de gestores de tráfego. Monto os planejamentos, defino as metas e acompanho os ajustes das contas.</span></div></li>
-        <li><time>até 2030</time><div><strong>Bacharelado em Administração</strong><span>Em andamento.</span></div></li>
+        <li class="reveal"><time>set 2023</time><div><strong>Gestor de tráfego autônomo</strong><span>Anúncios no Instagram, Facebook e Google para empresas de serviços, comércio, eventos e indústria.</span></div></li>
+        <li class="reveal"><time>jun 2024 – hoje</time><div><strong>Head de projetos · TJ Digital</strong><span>Lidero a equipe de gestores de tráfego. Monto os planejamentos, defino as metas e acompanho os ajustes das contas.</span></div></li>
+        <li class="reveal"><time>até 2030</time><div><strong>Bacharelado em Administração</strong><span>Em andamento.</span></div></li>
       </ol>
     </div>
   </div>
@@ -231,14 +246,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 
 <section class="section" id="trabalhos">
   <div class="wrap">
-    <div class="head">
+    <div class="reveal head">
       <span class="label">Trabalhos</span>
       <h2>O que foi feito e <em>o que mudou</em></h2>
       <p>Alguns projetos que acompanhei. Os nomes das empresas foram omitidos.</p>
     </div>
 
     <div class="cases">
-      <article class="case">
+      <article class="reveal case">
         <div class="case-id">
           <span class="case-no">01</span>
           <h3><span class="ph">Segmento do cliente</span></h3>
@@ -258,7 +273,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
         </div>
       </article>
 
-      <article class="case">
+      <article class="reveal case">
         <div class="case-id">
           <span class="case-no">02</span>
           <h3><span class="ph">Segmento do cliente</span></h3>
@@ -278,7 +293,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
         </div>
       </article>
 
-      <article class="case">
+      <article class="reveal case">
         <div class="case-id">
           <span class="case-no">03</span>
           <h3><span class="ph">Segmento do cliente</span></h3>
@@ -298,7 +313,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
         </div>
       </article>
 
-      <article class="case">
+      <article class="reveal case">
         <div class="case-id">
           <span class="case-no">04</span>
           <h3><span class="ph">Segmento do cliente</span></h3>
@@ -323,15 +338,15 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 
 <section class="section" id="alem" style="padding-top:0">
   <div class="wrap">
-    <div class="head">
+    <div class="reveal head">
       <span class="label">Além dos anúncios</span>
       <h2>Liderança e <em>ferramentas próprias</em></h2>
     </div>
     <div class="extras">
-      <div class="extra"><span class="label dim">Equipe</span><h3>Liderança de gestores</h3><p>Desde junho de 2024 lidero a equipe de gestores de tráfego da TJ Digital, em que cada gestor cuida de 10 a 12 clientes. Faço reuniões diárias, conversas individuais, treinamentos e revisões das contas a cada 15 dias.</p></div>
-      <div class="extra"><span class="label dim">Método</span><h3>Planejamento com metas</h3><p>Todo cliente tem metas mensais por plataforma: quantos contatos queremos, quanto cada um pode custar e quantos precisam ser de pessoas realmente interessadas.</p></div>
-      <div class="extra"><span class="label dim">Em construção</span><h3>Origem de cada contato</h3><p>Ferramenta própria que mostra de qual anúncio veio cada conversa no WhatsApp.</p></div>
-      <div class="extra"><span class="label dim">Em construção</span><h3>Painel das contas</h3><p>Painel próprio para acompanhar todos os dias o saldo, o custo de cada contato e o último ajuste feito em cada cliente.</p></div>
+      <div class="reveal extra"><span class="label dim">Equipe</span><h3>Liderança de gestores</h3><p>Desde junho de 2024 lidero a equipe de gestores de tráfego da TJ Digital, em que cada gestor cuida de 10 a 12 clientes. Faço reuniões diárias, conversas individuais, treinamentos e revisões das contas a cada 15 dias.</p></div>
+      <div class="reveal extra"><span class="label dim">Método</span><h3>Planejamento com metas</h3><p>Todo cliente tem metas mensais por plataforma: quantos contatos queremos, quanto cada um pode custar e quantos precisam ser de pessoas realmente interessadas.</p></div>
+      <div class="reveal extra"><span class="label dim">Em construção</span><h3>Origem de cada contato</h3><p>Ferramenta própria que mostra de qual anúncio veio cada conversa no WhatsApp.</p></div>
+      <div class="reveal extra"><span class="label dim">Em construção</span><h3>Painel das contas</h3><p>Painel próprio para acompanhar todos os dias o saldo, o custo de cada contato e o último ajuste feito em cada cliente.</p></div>
     </div>
   </div>
 </section>
@@ -339,11 +354,11 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 <section class="section contact" id="contato">
   <div class="wrap">
     <span class="label">Contato</span>
-    <h2>Contato</h2>
+    <h2 class="reveal">Contato</h2>
     <ul class="contact-list">
-      <li><span class="k">Instagram</span><span class="v"><a href="https://www.instagram.com/soufelipevieira/" target="_blank" rel="noopener">@soufelipevieira</a></span></li>
-      <li><span class="k">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/soufelipevieira/" target="_blank" rel="noopener">in/soufelipevieira</a></span></li>
-      <li><span class="k">E-mail</span><span class="v"><a id="mail" href="mailto:gestor.felipevs@gmail.com">gestor.felipevs@gmail.com</a><button class="copy" id="copyBtn" type="button">Copiar</button></span></li>
+      <li class="reveal"><span class="k">Instagram</span><span class="v"><a href="https://www.instagram.com/soufelipevieira/" target="_blank" rel="noopener">@soufelipevieira</a></span></li>
+      <li class="reveal"><span class="k">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/soufelipevieira/" target="_blank" rel="noopener">in/soufelipevieira</a></span></li>
+      <li class="reveal"><span class="k">E-mail</span><span class="v"><a id="mail" href="mailto:gestor.felipevs@gmail.com">gestor.felipevs@gmail.com</a><button class="copy" id="copyBtn" type="button">Copiar</button></span></li>
     </ul>
   </div>
 </section>
@@ -360,6 +375,32 @@ document.getElementById('copyBtn').addEventListener('click',function(){
   try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
 });
 </script>
+<script>
+(function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=[].slice.call(document.querySelectorAll('.reveal'));
+  // atraso em cascata dentro de cada grupo
+  [].slice.call(document.querySelectorAll('.numbers ul,.cases,.extras,.timeline,.contact-list,.hero-side')).forEach(function(g){
+    [].slice.call(g.querySelectorAll(':scope > .reveal')).forEach(function(el,i){el.style.setProperty('--d',(i*0.09)+'s')});
+  });
+  function count(el){
+    var b=el.querySelector('b'); if(!b||reduce) return;
+    var node=b.firstChild; if(!node||node.nodeType!==3) return;
+    var end=parseInt(node.nodeValue,10); if(!end||/–/.test(b.textContent)) return;
+    var t0=null,dur=1200;
+    function step(t){ if(!t0)t0=t; var p=Math.min((t-t0)/dur,1); var e=1-Math.pow(1-p,3);
+      node.nodeValue=String(Math.round(end*e)); if(p<1)requestAnimationFrame(step); }
+    node.nodeValue='0'; requestAnimationFrame(step);
+  }
+  if(reduce||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  document.documentElement.classList.add('js');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); if(en.target.matches('.numbers li')) count(en.target); io.unobserve(en.target);} });
+  },{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+
 
 </body>
 </html>
